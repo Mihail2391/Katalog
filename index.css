@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+.nav-link {
+	color: white;
+	background-color: rgb(158, 48, 48);
+	padding: 10px 20px;
+	height: 37px;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+}
+
+.nav {
+	list-style: none;
+}
+
+.nav-tree {
+	display: none;
+}
+
+.nav-tree.show {
+	display: block;
+}
+
+.nav-item + .nav-item {
+	margin-top: 5px;
+}
+
+.prefix {
+	color: grey;
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 2px solid grey;
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+
+.prefix.circle::before {
+	content: " ";
+	width: 5px;
+	height: 5px;
+	background-color: grey;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prefix.plus::before {
+	content: " ";
+	width: 7px;
+	height: 2px;
+	background-color: grey;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prefix.plus::after {
+	content: " ";
+	width: 7px;
+	height: 2px;
+	background-color: grey;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.prefix.minus::before {
+	content: " ";
+	width: 7px;
+	height: 2px;
+	background-color: grey;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
